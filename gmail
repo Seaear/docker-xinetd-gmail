@@ -9,7 +9,6 @@ service imap
     redirect = imap.gmail.com 993
     per_source = UNLIMITED
     cps = 100 2
-    log_type = stdout
 }
 service smtp-465
 {
@@ -22,7 +21,6 @@ service smtp-465
     redirect = smtp.gmail.com 465
     per_source = UNLIMITED
     cps = 100 2
-    log_type = stdout
 }
 service smtp-587
 {
@@ -35,5 +33,4 @@ service smtp-587
     redirect = smtp.gmail.com 587
     per_source = UNLIMITED
     cps = 100 2
-    log_type = stdout
 }
